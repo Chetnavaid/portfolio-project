@@ -20,6 +20,10 @@ h6 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
   font-family: var(--default-font-family);
   font-weight: lighter;
@@ -138,6 +142,47 @@ nav li.active a {
   line-height: 21px;
 }
 
+footer {
+  margin: 50px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
+  text-decoration: none;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a {
+  font-size: 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  margin: 0 20px;
+  padding: 10px 14px;
+  border-radius: 40%;
+}
+
+footer .social-links a:hover {
+  color: #ffffff;
+  background: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 960px) {
   body {
     text-align: center;
@@ -145,6 +190,14 @@ nav li.active a {
 
   h2 {
     font-size: 28px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 12px;
   }
 
   p {
@@ -184,5 +237,11 @@ nav li.active a {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+
+  footer .contact-box {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
   }
 }
